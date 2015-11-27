@@ -12,6 +12,6 @@ RUN echo "user=root" >> /etc/dnsmasq.conf
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-EXPOSE 53
+EXPOSE 53/udp
 
 CMD ["/usr/bin/supervisord"]
